@@ -12,6 +12,11 @@ class RofiCalc < Formula
     strategy :github_latest
   end
 
+  bottle do
+    root_url "https://github.com/jumpyvi/homebrew-morebrew/releases/download/rofi-calc-#{version}"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "010bee67584ef4580fa8bd00ffe2d344b5d6f295aa4f79648617a3711f956236"
+  end
+
   depends_on "bison" => :build
   depends_on "check" => :build
   depends_on "meson" => :build
