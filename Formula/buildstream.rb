@@ -1,16 +1,11 @@
 class Buildstream < Formula
   include Language::Python::Virtualenv
 
-  desc "Software integration tool"
+  desc "Is a powerful software integration tool"
   homepage "https://buildstream.build"
-  url "https://github.com/apache/buildstream"
+  url "https://files.pythonhosted.org/packages/7b/88/8b445d272ecb7367e5da4f0d8f41bae87517361098d4f712fb427e04af87/buildstream-2.6.0.tar.gz"
   sha256 "d6f835bab11dda88a3f213441768b1566e21a6c658913f0f0488fcf01a5c23bf"
   license "Apache-2.0"
-
-  bottle do
-    root_url "https://github.com/jumpyvi/homebrew-morebrew/releases/download/buildstream-2.6.0"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "66cefad151cfea76ae39b88fa7b41f884e7634d3bbe98b7d628978296b886827"
-  end
 
   depends_on "git"
   depends_on "gpatch"
