@@ -7,7 +7,6 @@ class Buildstream < Formula
   sha256 "d6f835bab11dda88a3f213441768b1566e21a6c658913f0f0488fcf01a5c23bf"
   license "Apache-2.0"
 
-  depends_on "git"
   depends_on "gpatch"
   depends_on "lzip"
   depends_on "python@3.11"
