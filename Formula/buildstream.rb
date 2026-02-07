@@ -12,12 +12,6 @@ class Buildstream < Formula
   depends_on "lzip"
   depends_on "python@3.11"
 
-  # Buildbox tools
-  resource "buildstream" do
-    url "https://files.pythonhosted.org/packages/14/67/7e9c41a4b78a5b262e9e238d5512f2bcd13949ea10ee061309019d4124f9/buildstream-2.6.0-cp311-cp311-manylinux_2_28_x86_64.whl"
-    sha256 "dda01e49b49ddffc998b6955a9be0f221671d6a284aa991f33a407132de9670c"
-  end
-
   # Cython for python11
   resource "Cython" do
     url "https://files.pythonhosted.org/packages/ac/25/58893afd4ef45f79e3d4db82742fa4ff874b936d67a83c92939053920ccd/cython-3.2.4-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl"
