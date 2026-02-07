@@ -1,9 +1,9 @@
 class Buildstream < Formula
   include Language::Python::Virtualenv
 
-  desc "The software integration tool"
+  desc "Software integration tool"
   homepage "https://buildstream.build"
-  url "https://files.pythonhosted.org/packages/source/B/BuildStream/buildstream-2.6.0.tar.gz"
+  url "https://github.com/apache/buildstream"
   sha256 "d6f835bab11dda88a3f213441768b1566e21a6c658913f0f0488fcf01a5c23bf"
   license "Apache-2.0"
 
@@ -12,11 +12,11 @@ class Buildstream < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux: "66cefad151cfea76ae39b88fa7b41f884e7634d3bbe98b7d628978296b886827"
   end
 
-  depends_on "python@3.11"
   depends_on "git"
-  depends_on "lzip"
   depends_on "gpatch"
-  
+  depends_on "lzip"
+  depends_on "python@3.11"
+
   # Buildbox tools
   resource "buildstream-binaries" do
     url "https://files.pythonhosted.org/packages/14/67/7e9c41a4b78a5b262e9e238d5512f2bcd13949ea10ee061309019d4124f9/buildstream-2.6.0-cp311-cp311-manylinux_2_28_x86_64.whl"
@@ -117,7 +117,7 @@ class Buildstream < Formula
     url "https://files.pythonhosted.org/packages/d3/94/1b65ffc7e8794b0391112d365f54c9d7da49d6257ea59dcee01ac29dad8d/dulwich-0.24.10-cp311-cp311-manylinux_2_28_x86_64.whl"
     sha256 "858fae0c7121715282a993abb1919385a28e1a9c4f136f568748d283c2ba874f"
   end
-  
+
   resource "urllib3" do
     url "https://files.pythonhosted.org/packages/56/1a/9ffe814d317c5224166b23e7c47f606d6e473712a2fad0f704ea9b99f246/urllib3-2.6.0-py3-none-any.whl"
     sha256 "c90f7a39f716c572c4e3e58509581ebd83f9b59cced005b7db7ad2d22b0db99f"
