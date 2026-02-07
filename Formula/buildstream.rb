@@ -101,12 +101,6 @@ class Buildstream < Formula
 
   # Manual deps for gnome/freedesktopsdk
 
-  # DO NOT UPDATE
-  # resource "dulwich" do
-  #   url "https://files.pythonhosted.org/packages/52/f0/26766a38b50502ec132343fffbd66b15f97218d338b212a6166d78b670b4/dulwich-0.24.8-cp311-cp311-manylinux_2_28_x86_64.whl"
-  #   sha256 "8eca5242f8aed324394c95ecd13a0a66d2a0c31c2556f0a52e7bb8dd67edef20"
-  # end
-
   resource "dulwich" do
     url "https://files.pythonhosted.org/packages/d3/94/1b65ffc7e8794b0391112d365f54c9d7da49d6257ea59dcee01ac29dad8d/dulwich-0.24.10-cp311-cp311-manylinux_2_28_x86_64.whl"
     sha256 "858fae0c7121715282a993abb1919385a28e1a9c4f136f568748d283c2ba874f"
