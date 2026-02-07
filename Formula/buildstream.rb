@@ -9,6 +9,7 @@ class Buildstream < Formula
 
   depends_on "gpatch"
   depends_on "lzip"
+  depends_on "buildbox"
   depends_on "python@3.11"
 
   # Cython for python11
