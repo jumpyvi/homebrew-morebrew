@@ -12,9 +12,9 @@ class Buildstream < Formula
     sha256 cellar: :any_skip_relocation, x86_64_linux: "e7ea00d44718e91554b302c04818df85829f7ef537663f4e1cc25b9ee80a6e45"
   end
 
+  depends_on "buildbox"
   depends_on "gpatch"
   depends_on "lzip"
-  depends_on "buildbox"
   depends_on "python@3.11"
 
   # Cython for python11
