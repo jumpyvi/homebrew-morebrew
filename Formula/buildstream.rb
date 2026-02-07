@@ -13,7 +13,7 @@ class Buildstream < Formula
   depends_on "python@3.11"
 
   # Buildbox tools
-  resource "buildstream-binaries" do
+  resource "buildstream" do
     url "https://files.pythonhosted.org/packages/14/67/7e9c41a4b78a5b262e9e238d5512f2bcd13949ea10ee061309019d4124f9/buildstream-2.6.0-cp311-cp311-manylinux_2_28_x86_64.whl"
     sha256 "dda01e49b49ddffc998b6955a9be0f221671d6a284aa991f33a407132de9670c"
   end
@@ -80,12 +80,12 @@ class Buildstream < Formula
     sha256 "7d815f624e0285db3669f673d1725cb754b120ec70d0032d7c7166103a96c96d"
   end
 
-  resource "ruamel.yaml" do
+  resource "ruamel-yaml" do
     url "https://files.pythonhosted.org/packages/c7/3b/ebda527b56beb90cb7652cb1c7e4f91f48649fbcd8d2eb2fb6e77cd3329b/ruamel_yaml-0.19.1.tar.gz"
     sha256 "53eb66cd27849eff968ebf8f0bf61f46cdac2da1d1f3576dd4ccee9b25c31993"
   end
 
-  resource "ruamel.yaml.clib" do
+  resource "ruamel-yaml-clib" do
     url "https://files.pythonhosted.org/packages/aa/ed/3fb20a1a96b8dc645d88c4072df481fe06e0289e4d528ebbdcc044ebc8b3/ruamel_yaml_clib-0.2.15-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl"
     sha256 "617d35dc765715fa86f8c3ccdae1e4229055832c452d4ec20856136acc75053f"
   end
