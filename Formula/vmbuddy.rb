@@ -11,6 +11,11 @@ class Vmbuddy < Formula
     regex(/^v?(\d+(?:\.\d+)+(?:-rc\.\d+)?)$/i)
   end
 
+  bottle do
+    root_url "https://github.com/jumpyvi/homebrew-morebrew/releases/download/vmbuddy-0.1.0"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "2272efcbae4491dcde0da55fff15fe20db821feaffe18b17ecbb20bf8a0c5333"
+  end
+
   def install
     bin.install "vmbuddy.sh" => "vmbuddy"
     bin.install_symlink "vmbuddy" => "vm"
